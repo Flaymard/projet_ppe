@@ -1,0 +1,16 @@
+Push Button 1 wired to pin A3 with values U, M
+Push Button 2 wired to pin A4 with values U, M
+Coloured LED 1 wired to pin 9 with values D, R
+Coloured LED 2 wired to pin 10 with values D, R
+Coloured LED 3 wired to pin 11 with values D, R
+Coloured LED 4 wired to pin 12 with values D, R
+Analog Slider 1 wired to pin A1 
+Analog Slider 2 wired to pin A0 
+Analog Slider 3 wired to pin -1 
+Analog Slider 4 wired to pin A2 
+Servo Motor 1 wired to pin 2 
+Servo Motor 2 wired to pin 3 
+Servo Motor 3 wired to pin 4 
+Servo Motor 4 wired to pin 5 
+Servo Motor 5 wired to pin 6 
+Servo Motor 6 wired to pin 7 

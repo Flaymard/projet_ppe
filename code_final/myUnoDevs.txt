@@ -1,0 +1,14 @@
+Coloured LED 1 wired to pin -1 with values D, R
+Coloured LED 2 wired to pin -1 with values D, R
+Coloured LED 3 wired to pin -1 with values D, R
+Coloured LED 4 wired to pin -1 with values D, R
+Analog Slider 1 wired to pin -1 
+Analog Slider 2 wired to pin -1 
+Analog Slider 3 wired to pin -1 
+Analog Slider 4 wired to pin -1 
+Analog Slider 5 wired to pin -1 
+Analog Slider 6 wired to pin -1 
+Analog Slider 7 wired to pin -1 
+Analog Slider 8 wired to pin -1 
+USB Serial 1 wired to pins 1 , 0 with value 9600
+Servo Motor 1 wired to pin 9 
