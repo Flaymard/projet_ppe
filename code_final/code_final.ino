@@ -5,7 +5,7 @@
 */
 
 /* Ce programme sera chargé dans la maquette */
-// NB : Certaines méthodes "return" sont utilisées pour la simulation. Elles n'ont aucun impact sur le fonctionnement du programme
+// NB : Certaines méthodes "return" sont utilisées pour la simulation (si elles ne sont pas présentes, la simulation ne s'éxécute pas). Elles n'ont aucun impact sur le fonctionnement du programme
 
 
 /* J'inclus la librairie "Servo" qui me permet de contrôler facilement des servomoteurs */
@@ -158,17 +158,17 @@ void loop() {
   // Cette partie contrôle les servomoteurs des gouvernes et les LEDs associées aux gouvernes.
 
 	for (i = 0 ; i < 3 ; i++) {
-  
+
 		if (changementJoystick()) {
-    
+
       knobVals[i] = analogRead(knobPins[i]);
       Serial.println(knobVals[i]);
-    
+
       if (dansDeadzone(knobVals[i])) {
         Serial.println("Dans Deadzone");
         servo[i].write(minCentreMax[i][1]);
         break;
-      }      
+      }
 			// si un joystick a changé de valeur, on actualise la valeur du servomoteur associé
 			  pos[i] = map(knobVals[i], 0 , 1023, minCentreMax[i][0], minCentreMax[i][2]);
 			  servo[i].write(pos[i]);
@@ -186,7 +186,6 @@ void loop() {
       digitalWrite(led[3], HIGH);
 			if (i == 0) pos[3]--;
 			if (i == 1) pos[3]++;
-      borner(pos[3], minCentreMax[3][0], minCentreMax[3][2]);
 		}
     if (servo[3].read() != minCentreMax[3][1]) {
       digitalWrite(led[3], HIGH);
@@ -194,4 +193,5 @@ void loop() {
 
 		servo[3].write(pos[3]);
 	}
+  pos[3] = borner(pos[3], minCentreMax[3][0], minCentreMax[3][2]);
 }
