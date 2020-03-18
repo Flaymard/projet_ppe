@@ -4,7 +4,7 @@ This project is carried out within the Baccalauréat (French high school final e
 
 # Why ?
 
-I personnaly love aeronautics, and my friends were enthusiastic about the idea of helping beginners to understand how the flight commands influence the behaviour of a plane.
+I personally love aeronautics, and my friends were enthusiastic about the idea of helping beginners to understand how the flight commands influence the behaviour of a plane.
 
 # What is the goal of this project ?
 
